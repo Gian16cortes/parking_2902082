@@ -9,21 +9,21 @@
     <entity-names>
       <counter>
         <item-type type-id="class" type="Class" />
-        <value>4</value>
+        <value>5</value>
       </counter>
     </entity-names>
     <entity-ids>
       <counter>
         <item-type type-id="class" type="Class" />
-        <value>5</value>
+        <value>6</value>
       </counter>
       <counter>
         <item-type type-id="property" type="Property" />
-        <value>43</value>
+        <value>53</value>
       </counter>
       <counter>
         <item-type type-id="relationship" type="Association" />
-        <value>14</value>
+        <value>18</value>
       </counter>
       <counter>
         <item-type type-id="comment" type="Comment" />
@@ -43,12 +43,13 @@
     <fields>
       <counter>
         <type>SoftwareIdeasModeler.Core.DiagramItems.Fields.OperationField</type>
-        <value>2</value>
+        <value>3</value>
       </counter>
     </fields>
   </counters>
   <alias-groups />
   <management uid="md-7dd8308f3750493e9eaeef22d057ad06" name="" task-id-sequence="0">
+    <working-schedule uid="ws-2486a3ad13fd410190e3261c8edd647c" hours="8" monday="8" tuesday="8" wednesday="8" thursday="8" friday="8" saturday="0" sunday="0" />
     <persons>
       <person id="">
         <first-name />
@@ -58,6 +59,7 @@
         <phone-number />
         <description />
         <color>#00000000</color>
+        <working-schedule uid="ws-7e8ce1ea60fa4ca284559f749dc9b56e" hours="8" monday="8" tuesday="8" wednesday="8" thursday="8" friday="8" saturday="0" sunday="0" />
       </person>
     </persons>
     <teams />
@@ -75,10 +77,12 @@
     <custom-types>
       <parameters />
       <types>
+        <type id="Long" name="Long" />
         <type id="Enum(tipo_vehiculo)" name="Enum(tipo_vehiculo)" />
         <type id="List&lt;Carro&gt;" name="List&lt;Carro&gt;" />
-        <type id="Class:8c7c14d63c174cb5810a04633e2e22ad" name="Carro" class-ref="8c7c14d63c174cb5810a04633e2e22ad" />
         <type id="Enum(TipoIdentificacion)" name="Enum(TipoIdentificacion)" />
+        <type id="Class:8c7c14d63c174cb5810a04633e2e22ad" name="Carro" class-ref="8c7c14d63c174cb5810a04633e2e22ad" />
+        <type id="Class:19e1c7c6669d462b8b54381ca7694a7a" name="Empleado" class-ref="19e1c7c6669d462b8b54381ca7694a7a" />
         <type id="Class:0fa8711cbcc54e8295e954dec785d58c" name="Cliente" class-ref="0fa8711cbcc54e8295e954dec785d58c" />
         <type id="Date" name="Date" />
         <type id="Class:b61efb7979f441ada9f0878a219515de" name="Registro" class-ref="b61efb7979f441ada9f0878a219515de" />
@@ -91,6 +95,9 @@
     <item id="88b520a72cf94e4da999fe0d9ec0d58c" cid="PROP038" type="property" name="contiene" owner="898578acee974a29a34ddb1105dcda37" creator="" creation-date="02/22/2024 14:10:48" visibility="private">
       <structural-feature multiplicity="1..*" type="Registro" type-id="Class:b61efb7979f441ada9f0878a219515de" />
     </item>
+    <item id="f1c98847727f45d9b01592193a343b16" cid="PROP051" type="property" name="crea" owner="6ea2af49e87640b8928cf593a5cf5380" creation-date="02/29/2024 14:35:31" visibility="private">
+      <structural-feature multiplicity="1" type="Empleado" type-id="Class:19e1c7c6669d462b8b54381ca7694a7a" />
+    </item>
     <item id="abd055ee44104062896d552418bcb2df" cid="PROP037" type="property" name="cuenta con" owner="898578acee974a29a34ddb1105dcda37" creator="" creation-date="02/22/2024 14:10:48" visibility="private">
       <structural-feature multiplicity="1" type="Carro" type-id="Class:8c7c14d63c174cb5810a04633e2e22ad" />
     </item>
@@ -99,6 +106,9 @@
     </item>
     <item id="093efc8f251f46e79670ebe507e438c6" cid="PROP010" type="property" owner="c91c0fbc63b94363bf79984981fb47ba" creator="" creation-date="02/22/2024 13:36:00" visibility="private">
       <structural-feature type="Cliente" type-id="Class:0fa8711cbcc54e8295e954dec785d58c" />
+    </item>
+    <item id="13bff6a2e0a247dd9cbfa5f5d9a5b86f" cid="PROP052" type="property" name="es creado por" owner="6ea2af49e87640b8928cf593a5cf5380" creation-date="02/29/2024 14:35:31" visibility="undefined">
+      <structural-feature multiplicity="*" type="Registro" type-id="Class:b61efb7979f441ada9f0878a219515de" />
     </item>
     <item id="f36a7f8d11874070901385b0123b7df7" cid="PROP036" type="property" name="está presente en" owner="ed34605da3bc48dbb5fe138adddeb481" creator="" creation-date="02/22/2024 14:01:10" visibility="private">
       <structural-feature multiplicity="1" type="Cupo" type-id="Class:fbb01224f4fa4fff90b9394ff53aed8d" />
@@ -129,7 +139,7 @@
       </meta>
       <abstract-items />
       <sub-models />
-      <diagram type="uml-class" id="pfcbf6af52f534bfea15e8936ac158957_996760845" name="ClassDiagram1" order-index="1" uid="" auto-routed-paths="false" default-line-style="default" view-location="-122,-393">
+      <diagram type="uml-class" id="pfcbf6af52f534bfea15e8936ac158957_996760845" name="ClassDiagram1" order-index="1" uid="" name-style="" auto-routed-paths="false" default-line-style="default" view-location="-122,-393">
         <style>
           <background-color index="1" color="#FFFFFFFF" />
           <background-color index="2" color="#FFFFFFFF" />
@@ -141,7 +151,7 @@
           </authors>
           <description />
           <creation-date>02/22/2024 13:29:09</creation-date>
-          <change-date>02/22/2024 14:11:08</change-date>
+          <change-date>02/29/2024 14:35:31</change-date>
           <revision-count>0</revision-count>
           <version />
         </meta>
@@ -167,11 +177,14 @@ Rombo negro: (Composicion): si se elimina el conjunto, las partes se eliminan ju
 
 </comment>
           </item>
+          <item id="e1fb93ad6e40427597fe47c5d15f5baa" cid="PROP043" type="property" name="nombre" owner="19e1c7c6669d462b8b54381ca7694a7a" creation-date="02/29/2024 14:32:55" visibility="private">
+            <structural-feature type="String" type-id="Uml.String" />
+          </item>
           <item id="898578acee974a29a34ddb1105dcda37" cid="REL011" type="relationship" creator="" creation-date="02/22/2024 14:10:48" from="8c7c14d63c174cb5810a04633e2e22ad" to="b61efb7979f441ada9f0878a219515de" visibility="package">
             <owned-items />
             <relation from="8c7c14d63c174cb5810a04633e2e22ad" to="b61efb7979f441ada9f0878a219515de" derived="false">
-              <start-role id="umlar-4a877f7c-9b17-48ac-887e-161c7de90a5b" name="" navigability="" association-type="association" visibility="private" property-ref="abd055ee44104062896d552418bcb2df" />
-              <end-role id="umlar-776b6d03-9753-4b53-bef3-5a338bb133d8" name="" navigability="" association-type="association" visibility="private" property-ref="88b520a72cf94e4da999fe0d9ec0d58c" />
+              <start-role id="umlar-c4ff815b-2692-46e5-a270-636cf0024121" name="" navigability="" association-type="association" visibility="private" property-ref="abd055ee44104062896d552418bcb2df" />
+              <end-role id="umlar-224a6f12-0259-4b07-88e5-a9da88c3c505" name="" navigability="" association-type="association" visibility="private" property-ref="88b520a72cf94e4da999fe0d9ec0d58c" />
             </relation>
           </item>
           <item id="14b6b56697744443be7b4c7a45499c46" cid="PROP007" type="property" name="celular" owner="0fa8711cbcc54e8295e954dec785d58c" creator="" creation-date="02/22/2024 13:34:04" visibility="private">
@@ -180,14 +193,14 @@ Rombo negro: (Composicion): si se elimina el conjunto, las partes se eliminan ju
           <item id="c91c0fbc63b94363bf79984981fb47ba" cid="REL001" type="relationship" creator="" creation-date="02/22/2024 13:36:00" from="0fa8711cbcc54e8295e954dec785d58c" to="0fa8711cbcc54e8295e954dec785d58c" visibility="package">
             <owned-items />
             <relation from="0fa8711cbcc54e8295e954dec785d58c" to="0fa8711cbcc54e8295e954dec785d58c" derived="false">
-              <start-role id="umlar-86102741-c3c3-4a43-8ddd-dcb8a77fd327" name="" navigability="" association-type="composition" visibility="private" attribute-ref="a711197f5f0284e04becf5b508bd478c07" property-ref="df6e5ca8208644d38e79b8b8d39e6e47" />
-              <end-role id="umlar-9880540c-413f-418a-bc72-1721bd8761b0" name="" navigability="" association-type="association" visibility="private" attribute-ref="a711197f5f0284e04becf5b508bd478c07" property-ref="093efc8f251f46e79670ebe507e438c6" />
+              <start-role id="umlar-b1cabf2f-dd9b-4440-99f1-af4f8098fb23" name="" navigability="" association-type="composition" visibility="private" attribute-ref="a711197f5f0284e04becf5b508bd478c07" property-ref="df6e5ca8208644d38e79b8b8d39e6e47" />
+              <end-role id="umlar-e8b4554c-f66e-4508-816a-acaf99f6e688" name="" navigability="" association-type="association" visibility="private" attribute-ref="a711197f5f0284e04becf5b508bd478c07" property-ref="093efc8f251f46e79670ebe507e438c6" />
             </relation>
           </item>
           <item id="4e262c57dfec40caa7f4f251b596ea8d" cid="PROP027" type="property" name="horaFin" owner="b61efb7979f441ada9f0878a219515de" creator="" creation-date="02/22/2024 13:58:02" visibility="private">
-            <structural-feature type="Time" type-id="Time" />
+            <structural-feature type="Empleado" type-id="Class:19e1c7c6669d462b8b54381ca7694a7a" />
           </item>
-          <item id="0fa8711cbcc54e8295e954dec785d58c" cid="C002" type="class" name="Cliente" creator="" creation-date="02/22/2024 13:31:08">
+          <item id="0fa8711cbcc54e8295e954dec785d58c" cid="C002" type="class" name="Cliente" creator="" creation-date="02/22/2024 13:31:08" visibility="undefined">
             <owned-items />
             <attributes>
               <attribute id="a6b601d3c42bc47fea3096808cda0af17847" cid="PROP003" name="nombre" creation-date="02/22/2024 13:31:12" property-ref="c5790345427f4125a4b27df25f02f37d" />
@@ -201,14 +214,17 @@ Rombo negro: (Composicion): si se elimina el conjunto, las partes se eliminan ju
               <operation id="oe3edb58979aa4ad8b5f47f47edcfa1f6759" cid="OP001" name="addCar" creation-date="02/22/2024 13:45:41" type="" type-id="" visibility="public" />
             </operations>
           </item>
+          <item id="0bf79a180da641e180f9d3d37b6cfa41" cid="PROP044" type="property" name="codigo" owner="19e1c7c6669d462b8b54381ca7694a7a" creation-date="02/29/2024 14:33:11" visibility="private">
+            <structural-feature type="Long" type-id="Long" />
+          </item>
           <item id="eab6aa9b30ae43089912b31b34d29dfc" cid="PROP008" type="property" name="misCarros" owner="0fa8711cbcc54e8295e954dec785d58c" creator="" creation-date="02/22/2024 13:34:15" visibility="private">
             <structural-feature type="List&lt;Carro&gt;" type-id="List&lt;Carro&gt;" />
           </item>
           <item id="ed34605da3bc48dbb5fe138adddeb481" cid="REL010" type="relationship" creator="" creation-date="02/22/2024 14:01:10" from="b61efb7979f441ada9f0878a219515de" to="fbb01224f4fa4fff90b9394ff53aed8d" visibility="package">
             <owned-items />
             <relation from="b61efb7979f441ada9f0878a219515de" to="fbb01224f4fa4fff90b9394ff53aed8d" derived="false">
-              <start-role id="umlar-c0d02468-1279-470f-a81c-502631b2285c" name="" navigability="" association-type="association" visibility="undefined" property-ref="70c53dab28f147a18f5bced25f67be51" />
-              <end-role id="umlar-dc3fdb66-8f36-46b4-9675-ae8eef55e857" name="" navigability="" association-type="association" visibility="undefined" property-ref="f36a7f8d11874070901385b0123b7df7" />
+              <start-role id="umlar-ec03d46a-8aa3-4777-ab47-217cd430b49c" name="" navigability="" association-type="association" visibility="undefined" property-ref="70c53dab28f147a18f5bced25f67be51" />
+              <end-role id="umlar-15c1524f-ac82-4cda-bb30-fca830c3881d" name="" navigability="" association-type="association" visibility="undefined" property-ref="f36a7f8d11874070901385b0123b7df7" />
             </relation>
           </item>
           <item id="23a0e172599c4f5dac2f14758372a82f" cid="PROP005" type="property" name="tipoIdentificacion" owner="0fa8711cbcc54e8295e954dec785d58c" creator="" creation-date="02/22/2024 13:32:38" visibility="private">
@@ -220,14 +236,14 @@ Rombo negro: (Composicion): si se elimina el conjunto, las partes se eliminan ju
           <item id="44834fa3771e4e84ab00342b1840b0f3" cid="PROP001" type="property" name="placa" owner="8c7c14d63c174cb5810a04633e2e22ad" creator="" creation-date="02/22/2024 13:29:58" visibility="private">
             <structural-feature type="String" type-id="Uml.String" />
           </item>
-          <item id="8c7c14d63c174cb5810a04633e2e22ad" cid="C001" type="class" name="Carro" creator="" creation-date="02/22/2024 13:29:32">
+          <item id="8c7c14d63c174cb5810a04633e2e22ad" cid="C001" type="class" name="Carro" creator="" creation-date="02/22/2024 13:29:32" visibility="undefined">
             <owned-items />
             <attributes>
               <attribute id="ac426100647774c538da29d0ea66b7cf761" cid="PROP001" name="placa" creation-date="02/22/2024 13:29:58" property-ref="44834fa3771e4e84ab00342b1840b0f3" />
               <attribute id="a875e7f9ff81940ebab3e6b267ffcafbf456" cid="PROP002" name="TipoVehiculo" creation-date="02/22/2024 13:30:33" property-ref="613153062edb4b27b0622f50095deb2f" />
             </attributes>
           </item>
-          <item id="b61efb7979f441ada9f0878a219515de" cid="C004" type="class" name="Registro" creator="" creation-date="02/22/2024 13:55:58">
+          <item id="b61efb7979f441ada9f0878a219515de" cid="C004" type="class" name="Registro" creator="" creation-date="02/22/2024 13:55:58" visibility="undefined">
             <owned-items />
             <attributes>
               <attribute id="ab104b631a6ee488ea30f232a224d2648772" cid="PROP024" name="fechaInicio" creation-date="02/22/2024 13:56:07" property-ref="b25a7fc425894153895e95f42c12a39b" />
@@ -237,19 +253,19 @@ Rombo negro: (Composicion): si se elimina el conjunto, las partes se eliminan ju
               <attribute id="af2083bd0b4a34c9cb16dcf1074584f16435" cid="PROP028" name="valor" creation-date="02/22/2024 13:58:30" property-ref="c650ac72768b4cf190f3bdc29a1239a8" />
             </attributes>
           </item>
+          <item id="646d15f021834ed2b643738847298158" cid="PROP006" type="property" name="numeroIdentificacion" owner="0fa8711cbcc54e8295e954dec785d58c" creator="" creation-date="02/22/2024 13:33:33" visibility="private">
+            <structural-feature type="BigInteger" type-id="Uml.BigInteger" />
+          </item>
           <item id="b295aa2a6c424fb0b9a75e7aa983d67e" cid="PROP021" type="property" name="letra" owner="fbb01224f4fa4fff90b9394ff53aed8d" creator="" creation-date="02/22/2024 13:46:42" visibility="private">
             <structural-feature type="Char" type-id="Uml.Char" />
           </item>
           <item id="02b4f26e0ea54fbcaeb13351cfee2125" cid="PROP023" type="property" name="ancho" owner="fbb01224f4fa4fff90b9394ff53aed8d" creator="" creation-date="02/22/2024 13:49:54" visibility="private">
             <structural-feature type="Cupo" type-id="Class:fbb01224f4fa4fff90b9394ff53aed8d" />
           </item>
-          <item id="646d15f021834ed2b643738847298158" cid="PROP006" type="property" name="numeroIdentificacion" owner="0fa8711cbcc54e8295e954dec785d58c" creator="" creation-date="02/22/2024 13:33:33" visibility="private">
-            <structural-feature type="BigInteger" type-id="Uml.BigInteger" />
-          </item>
           <item id="3880ef0b4f844b0ab173b373c27b29d3" cid="PROP004" type="property" name="apellidos" owner="0fa8711cbcc54e8295e954dec785d58c" creator="" creation-date="02/22/2024 13:32:26" visibility="private">
             <structural-feature type="String" type-id="Uml.String" />
           </item>
-          <item id="fbb01224f4fa4fff90b9394ff53aed8d" cid="C003" type="class" name="Cupo" creator="" creation-date="02/22/2024 13:46:34">
+          <item id="fbb01224f4fa4fff90b9394ff53aed8d" cid="C003" type="class" name="Cupo" creator="" creation-date="02/22/2024 13:46:34" visibility="undefined">
             <owned-items />
             <attributes>
               <attribute id="a6cd1d53d6be74ffea3e5038ff440f873565" cid="PROP021" name="letra" creation-date="02/22/2024 13:46:42" property-ref="b295aa2a6c424fb0b9a75e7aa983d67e" />
@@ -263,11 +279,25 @@ Rombo negro: (Composicion): si se elimina el conjunto, las partes se eliminan ju
           <item id="613153062edb4b27b0622f50095deb2f" cid="PROP002" type="property" name="TipoVehiculo" owner="8c7c14d63c174cb5810a04633e2e22ad" creator="" creation-date="02/22/2024 13:30:33" visibility="private">
             <structural-feature type="Enum(tipo_vehiculo)" type-id="Enum(tipo_vehiculo)" />
           </item>
+          <item id="19e1c7c6669d462b8b54381ca7694a7a" cid="C005" type="class" name="Empleado" creation-date="02/29/2024 14:32:40">
+            <owned-items />
+            <attributes>
+              <attribute id="a3bfe60cb8eb24c1399e8556668c6d0ff887" cid="PROP043" name="nombre" creation-date="02/29/2024 14:32:55" property-ref="e1fb93ad6e40427597fe47c5d15f5baa" />
+              <attribute id="a532a3e45e2c64916bf10cf7a949138ab597" cid="PROP044" name="codigo" creation-date="02/29/2024 14:33:11" property-ref="0bf79a180da641e180f9d3d37b6cfa41" />
+            </attributes>
+          </item>
           <item id="332f765434ce43fe855ec92739d534bc" cid="PROP025" type="property" name="horaInicio" owner="b61efb7979f441ada9f0878a219515de" creator="" creation-date="02/22/2024 13:56:52" visibility="private">
             <structural-feature type="Time" type-id="Time" />
           </item>
           <item id="e15074684af0419c8197b212c509398b" cid="PROP026" type="property" name="fechaFin" owner="b61efb7979f441ada9f0878a219515de" creator="" creation-date="02/22/2024 13:57:50" visibility="private">
             <structural-feature type="Date" type-id="Date" />
+          </item>
+          <item id="6ea2af49e87640b8928cf593a5cf5380" cid="REL017" type="relationship" creation-date="02/29/2024 14:35:31" from="19e1c7c6669d462b8b54381ca7694a7a" to="b61efb7979f441ada9f0878a219515de" visibility="package">
+            <owned-items />
+            <relation from="19e1c7c6669d462b8b54381ca7694a7a" to="b61efb7979f441ada9f0878a219515de" derived="false">
+              <start-role id="umlar-6f240c7d-2890-49d8-9a43-b8850782552e" name="" navigability="" association-type="association" visibility="private" property-ref="f1c98847727f45d9b01592193a343b16" />
+              <end-role id="umlar-7b8b6a1b-7c2e-49be-9f0b-c388f54d4d8c" name="" navigability="" association-type="association" visibility="private" attribute-ref="a934cfed4c0f44cb4840f6266f006516d76" property-ref="13bff6a2e0a247dd9cbfa5f5d9a5b86f" />
+            </relation>
           </item>
           <item id="c650ac72768b4cf190f3bdc29a1239a8" cid="PROP028" type="property" name="valor" owner="b61efb7979f441ada9f0878a219515de" creator="" creation-date="02/22/2024 13:58:30" visibility="private">
             <structural-feature type="BigReal" type-id="Uml.BigReal" />
@@ -275,8 +305,8 @@ Rombo negro: (Composicion): si se elimina el conjunto, las partes se eliminan ju
           <item id="73fa777e8e924fc5a64fc288a4002fce" cid="REL003" type="relationship" creator="" creation-date="02/22/2024 13:42:37" from="0fa8711cbcc54e8295e954dec785d58c" to="8c7c14d63c174cb5810a04633e2e22ad" visibility="package">
             <owned-items />
             <relation from="0fa8711cbcc54e8295e954dec785d58c" to="8c7c14d63c174cb5810a04633e2e22ad" derived="false">
-              <start-role id="umlar-3022d3ad-7afb-4efd-afaf-70f9a3301b67" name="" navigability="" association-type="aggregation" visibility="private" property-ref="4e9965fd52e043e2b980200b548bc45a" />
-              <end-role id="umlar-2be32f67-d9d6-462e-8337-293a63f6a48e" name="" navigability="" association-type="association" visibility="private" property-ref="d6167cc4ab2c4f9a8b0c1587cd03e6f5" />
+              <start-role id="umlar-4ce6286c-df19-4fb2-8af3-fa603319a1a5" name="" navigability="" association-type="aggregation" visibility="private" property-ref="4e9965fd52e043e2b980200b548bc45a" />
+              <end-role id="umlar-7b8fd0fc-e664-4ae7-91f6-be99c45d268c" name="" navigability="" association-type="association" visibility="private" property-ref="d6167cc4ab2c4f9a8b0c1587cd03e6f5" />
             </relation>
           </item>
         </abstract-items>
@@ -292,7 +322,7 @@ Rombo negro: (Composicion): si se elimina el conjunto, las partes se eliminan ju
             <class />
           </item>
           <item id="ad1a62092edf4b1d9f8294ccd5a8ffe2" iid="11906e7cdeb948e68550dc6fa9ca8d07" creation-date="02/22/2024 13:38:17" order-index="3" type="entity">
-            <layout ax="142" ay="356" awidth="303" aheight="231" x="142" y="356" width="140" height="100" />
+            <layout ax="682" ay="-285" awidth="343" aheight="271" x="682" y="-285" width="140" height="100" />
           </item>
           <item id="73fa777e8e924fc5a64fc288a4002fce" iid="4f67cea7fd754766b8f9f8e7754cdd25" creation-date="02/22/2024 13:42:37" order-index="4" type="relation">
             <layout start-role-position="25,15" end-role-position="37.07129,19.29634" start-multiplicity-position="24.975,-16.99985" end-multiplicity-position="19.91119,-30.80188" line-style="oblique" end-auto-side="false" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="294" y1="-140" x2="466" y2="-137" start-border-pos="0.905172413793103" end-border-pos="0.9015625" start-local-pos="66" end-local-pos="63" name-position="-3,24">
@@ -304,36 +334,50 @@ Rombo negro: (Composicion): si se elimina el conjunto, las partes se eliminan ju
             <relation from="0fa8711cbcc54e8295e954dec785d58c" from-iid="73aabea622ed41e596ecee6884ce5037" to="8c7c14d63c174cb5810a04633e2e22ad" to-iid="53dcd9f2204d46fdb27295b3ac4a8a26" to-field="a875e7f9ff81940ebab3e6b267ffcafbf456" />
           </item>
           <item id="fbb01224f4fa4fff90b9394ff53aed8d" iid="c01ac941656e49808a3df6f303f6f352" show-fields="true" creation-date="02/22/2024 13:46:34" order-index="5" type="entity">
-            <layout ax="86" ay="151" awidth="140" aheight="100" x="86" y="151" width="140" height="100" rotation-center="0,30" />
+            <layout ax="-54" ay="119" awidth="140" aheight="100" x="-54" y="119" width="140" height="100" rotation-center="0,30" />
             <classifier />
             <class />
           </item>
           <item id="b61efb7979f441ada9f0878a219515de" iid="ec4836277d5d4497bff8a503b1873de3" show-fields="true" creation-date="02/22/2024 13:55:58" order-index="6" type="entity">
-            <layout ax="466" ay="151" awidth="162" aheight="160" x="466" y="151" width="162" height="160" rotation-center="-11,0" />
+            <layout ax="466" ay="119" awidth="159" aheight="160" x="466" y="119" width="159" height="160" rotation-center="-9.5,32" />
             <classifier />
             <class />
           </item>
           <item id="ed34605da3bc48dbb5fe138adddeb481" iid="1c071406a8b34019a920061ab5c37e6a" creation-date="02/22/2024 14:01:10" order-index="7" type="relation">
-            <layout start-role-position="50.43187,21.10595" end-role-position="56.87783,16.48828" start-multiplicity-position="30.00038,-15.14835" end-multiplicity-position="29.85678,-21.11864" line-style="oblique" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="466" y1="190" x2="226" y2="190" start-border-pos="0.93844696969697" end-border-pos="0.3484375" start-local-pos="65" end-local-pos="63" name-position="0,20">
+            <layout start-role-position="50.43187,21.10595" end-role-position="56.87783,16.48828" start-multiplicity-position="30.00038,-15.14835" end-multiplicity-position="29.85678,-21.11864" line-style="oblique" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="466" y1="158" x2="86" y2="158" start-border-pos="0.93844696969697" end-border-pos="0.3484375" start-local-pos="65" end-local-pos="63" name-position="0,20">
               <points>
-                <point x="466" y="190" />
-                <point x="226" y="190" />
+                <point x="466" y="158" />
+                <point x="86" y="158" />
               </points>
             </layout>
             <relation from="b61efb7979f441ada9f0878a219515de" from-iid="ec4836277d5d4497bff8a503b1873de3" to="fbb01224f4fa4fff90b9394ff53aed8d" to-iid="c01ac941656e49808a3df6f303f6f352" />
           </item>
           <item id="8eef3194b7644511b3b1a3e4633e255d" iid="aeaf6b7245d044ee9b171ccda5061bde" creation-date="02/22/2024 14:03:17" order-index="8" type="entity">
-            <layout ax="142" ay="606" awidth="303" aheight="127" x="142" y="606" width="303" height="100" rotation-center="33.5,0" />
+            <layout ax="702" ay="33.5" awidth="303" aheight="127" x="702" y="33.5" width="303" height="100" rotation-center="33.5,0" />
           </item>
           <item id="898578acee974a29a34ddb1105dcda37" iid="c1fbc31dcfb9458d9799345a7598db37" creation-date="02/22/2024 14:10:48" order-index="9" type="relation">
-            <layout start-role-position="22.69863,48.48749" end-role-position="15.2059,27.6781" start-multiplicity-position="22.77163,-42.56657" end-multiplicity-position="17.924,-34.12735" line-style="oblique" start-auto-side="false" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="536" y1="-40" x2="536" y2="151" start-border-pos="0.625" end-border-pos="0.108024691358025" start-local-pos="70" end-local-pos="70" name-position="-48,-5">
+            <layout start-role-position="22.69863,48.48749" end-role-position="15.2059,27.6781" start-multiplicity-position="22.77163,-42.56657" end-multiplicity-position="17.924,-34.12735" line-style="oblique" start-auto-side="false" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="536" y1="-40" x2="535" y2="119" start-border-pos="0.625" end-border-pos="0.108024691358025" start-local-pos="70" end-local-pos="70" name-position="-48,-5">
               <points>
                 <point x="536" y="-40" />
                 <point x="536" y="53.5" />
-                <point x="536" y="151" />
+                <point x="535" y="119" />
               </points>
             </layout>
             <relation from="8c7c14d63c174cb5810a04633e2e22ad" from-iid="53dcd9f2204d46fdb27295b3ac4a8a26" to="b61efb7979f441ada9f0878a219515de" to-iid="ec4836277d5d4497bff8a503b1873de3" />
+          </item>
+          <item id="19e1c7c6669d462b8b54381ca7694a7a" iid="16dd64917cdf4e3aa2d7509ffc5d678d" show-fields="true" creation-date="02/29/2024 14:32:40" order-index="10" type="entity">
+            <layout ax="1104" ay="135" awidth="140" aheight="160" x="1104" y="135" width="140" height="160" />
+            <classifier />
+            <class />
+          </item>
+          <item id="6ea2af49e87640b8928cf593a5cf5380" iid="e5541c7020aa41dea139e1f520e24712" creation-date="02/29/2024 14:35:31" order-index="11" type="relation">
+            <layout start-role-position="25,15" end-role-position="55.79409,18.95932" start-multiplicity-position="25,-15" end-multiplicity-position="23.17417,-12.01233" line-style="oblique" lock-end-point="true" lock-to-fields="true" auto-path="" x1="1104" y1="215" x2="625" y2="216" start-border-pos="0.874800777435303" end-border-pos="0.40234375" end-local-pos="97" name-position="0,20">
+              <points>
+                <point x="1104" y="215" />
+                <point x="625" y="216" />
+              </points>
+            </layout>
+            <relation from="19e1c7c6669d462b8b54381ca7694a7a" from-iid="16dd64917cdf4e3aa2d7509ffc5d678d" to="b61efb7979f441ada9f0878a219515de" to-iid="ec4836277d5d4497bff8a503b1873de3" to-field="a934cfed4c0f44cb4840f6266f006516d76" />
           </item>
         </layer>
       </diagram>
